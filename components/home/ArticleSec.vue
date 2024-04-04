@@ -8,10 +8,10 @@ defineComponent({
 
 
 <template>
-    <div class="flex flex-wrap gap-20 my-10 mx-20">
+    <div class="flex max-md:flex-wrap gap-20 my-10 mx-20">
         <div class="flex-2 flex flex-col gap-10">
-            <div class="flex gap-10 flex-wrap">
-                <img src="/assets/home/articleSec/hopeDies.svg" alt="image...">
+            <div class="flex gap-10 max-lg:flex-wrap">
+                <img class="w-[240px] h-[240px]" src="/assets/home/articleSec/hopeDies.svg" alt="image...">
                 <div class="flex gap-20 flex-col justify-between">
                     <div class="flex flex-col gap-2">
                         <h2 class="text-3xl font-semibold">Hope dies last</h2>
@@ -21,7 +21,7 @@ defineComponent({
                     </div>
                     <div>
                         <div class="flex justify-between">
-                            <div class="flex gap-8 justify-start items-center text-sm">
+                            <div class="flex gap-8 justify-start items-center text-sm max-md:gap-2">
                                 <div>
                                     <span class="font-semibold pr-2">Text</span><span>Jakob Gronberg</span>
                                 </div>
@@ -32,14 +32,14 @@ defineComponent({
                                     <span class="font-semibold pr-2">Read</span><span>1 Min</span>
                                 </div>
                             </div>
-                            <button class="border border-black px-2 py-1 text-xs rounded-xl uppercase">art</button>
+                            <button class="border border-black px-2 py-1 text-xs rounded-3xl uppercase">art</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="border border-black"></div>
-            <div class="flex gap-10 flex-wrap">
-                <img src="/assets/home/articleSec/artMuseum.svg" alt="image...">
+            <div class="flex gap-10 max-lg:flex-wrap">
+                <img class="w-[240px] h-[240px]" src="/assets/home/articleSec/artMuseum.svg" alt="image...">
                 <div class="flex gap-20 flex-col justify-between">
                     <div class="flex flex-col gap-2">
                         <h2 class="text-3xl font-semibold">The best art museums</h2>
@@ -60,14 +60,14 @@ defineComponent({
                                     <span class="font-semibold pr-2">Read</span><span>1 Min</span>
                                 </div>
                             </div>
-                            <button class="border border-black px-2 py-1 text-xs rounded-xl uppercase">Sculptures</button>
+                            <button class="border border-black px-2 py-1 text-xs rounded-3xl uppercase">Sculptures</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="border border-black"></div>
-            <div class="flex gap-10 flex-wrap">
-                <img src="/assets/home/articleSec/devil.svg" alt="image...">
+            <div class="flex gap-10 max-lg:flex-wrap">
+                <img class="w-[240px] h-[240px]" src="/assets/home/articleSec/devil.svg" alt="image...">
                 <div class="flex gap-20 flex-col justify-between">
                     <div class="flex flex-col gap-2">
                         <h2 class="text-3xl font-semibold">The devil is the details</h2>
@@ -88,14 +88,14 @@ defineComponent({
                                     <span class="font-semibold pr-2">Read</span><span>1 Min</span>
                                 </div>
                             </div>
-                            <button class="border border-black px-2 py-1 text-xs rounded-xl uppercase">art</button>
+                            <button class="border border-black px-2 py-1 text-xs rounded-3xl uppercase">art</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="border border-black"></div>
-            <div class="flex gap-10 flex-wrap">
-                <img src="/assets/home/articleSec/hope.svg" alt="image...">
+            <div class="flex gap-10 max-lg:flex-wrap">
+                <img class="w-[240px] h-[240px]" src="/assets/home/articleSec/hope.svg" alt="image...">
                 <div class="flex gap-20 flex-col justify-between">
                     <div class="flex flex-col gap-2">
                         <h2 class="text-3xl font-semibold">An inde­struc­tible hope</h2>
@@ -116,14 +116,14 @@ defineComponent({
                                     <span class="font-semibold pr-2">Read</span><span>1 Min</span>
                                 </div>
                             </div>
-                            <button class="border border-black px-2 py-1 text-xs rounded-xl uppercase">art</button>
+                            <button class="border border-black px-2 py-1 text-xs rounded-3xl uppercase">art</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="border border-black"></div>
-            <div class="flex gap-10 flex-wrap">
-                <img src="/assets/home/articleSec/streetArt.svg" alt="image...">
+            <div class="flex gap-10 max-lg:flex-wrap">
+                <img class="w-[240px] h-[240px]" src="/assets/home/articleSec/streetArt.svg" alt="image...">
                 <div class="flex gap-20 flex-col justify-between">
                     <div class="flex flex-col gap-2">
                         <h2 class="text-3xl font-semibold">Street art festival</h2>
@@ -144,14 +144,14 @@ defineComponent({
                                     <span class="font-semibold pr-2">Read</span><span>1 Min</span>
                                 </div>
                             </div>
-                            <button class="border border-black px-2 py-1 text-xs rounded-xl uppercase">street Art</button>
+                            <button class="border border-black px-2 py-1 text-xs rounded-3xl uppercase">street Art</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="border border-black"></div>
-            <div class="flex gap-10 flex-wrap">
-                <img src="/assets/home/articleSec/eyesOfStreet.svg" alt="image...">
+            <div class="flex gap-10 max-lg:flex-wrap">
+                <img class="w-[240px] h-[240px]" src="/assets/home/articleSec/eyesOfStreet.svg" alt="image...">
                 <div class="flex gap-20 flex-col justify-between">
                     <div class="flex flex-col gap-2">
                         <h2 class="text-3xl font-semibold">Through the eyes of street artists</h2>
@@ -172,7 +172,7 @@ defineComponent({
                                     <span class="font-semibold pr-2">Read</span><span>1 Min</span>
                                 </div>
                             </div>
-                            <button class="border border-black px-2 py-1 text-xs rounded-xl uppercase">street Art</button>
+                            <button class="border border-black px-2 py-1 text-xs rounded-3xl uppercase">street Art</button>
                         </div>
                     </div>
                 </div>

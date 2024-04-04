@@ -1,7 +1,7 @@
 <template>
     <div class="mx-20 my-20">
         <div class="flex flex-wrap justify-between items-center border-t border-black pt-10 mb-20">
-            <h1 class="text-8xl font-semibold">PODCAST</h1>
+            <h1 class="text-8xl font-semibold max-md:text-5xl">PODCAST</h1>
             <a class="font-semibold flex gap-2 items-center" href="">ALL ARTICLES
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
 		            <path fill="black" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z" />

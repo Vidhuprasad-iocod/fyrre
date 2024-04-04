@@ -3,7 +3,7 @@
         <h1 class="text-[17dvw] leading-[14dvw] font-bold text-center w-full my-5">
             ART & LIFE
         </h1>
-        <div class="flex gap-5 p-2 overflow-scroll bg-black text-white text-center text-sm">
+        <div class="flex gap-5 p-2 max-md:overflow-scroll bg-black text-white text-center text-sm">
             <h4 class="font-semibold text-base">News Ticker+++</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit +++</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit +++</p>
@@ -18,18 +18,18 @@
                     </p>
                     <div>
                         <div class="flex justify-between">
-                            <div class="flex gap-8 justify-start items-center text-sm">
-                                <div>
+                            <div class="flex gap-8 justify-start items-center text-sm max-md:gap-4">
+                                <div class="max-md:flex max-md:flex-col">
                                     <span class="font-semibold pr-2">Text</span><span>Jakob Gronberg</span>
                                 </div>
-                                <div>
+                                <div class="max-md:flex max-md:flex-col">
                                     <span class="font-semibold pr-2">Date</span><span>16. March 2022</span>
                                 </div>
-                                <div>
+                                <div class="max-md:flex max-md:flex-col">
                                     <span class="font-semibold pr-2">Duration</span><span>1 Min</span>
                                 </div>
                             </div>
-                            <button class="border border-black px-2 py-1 text-xs rounded-xl">LABEL</button>
+                            <button class="border border-black px-2 py-1 text-xs rounded-xl max-sm:p-0 ">LABEL</button>
                         </div>
                     </div>
                 </div>
