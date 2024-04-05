@@ -1,0 +1,3 @@
+<template>
+    <authors />
+</template>

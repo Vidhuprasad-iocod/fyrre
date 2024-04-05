@@ -1,8 +1,6 @@
 <template>
     <div class="mx-20 my-10 flex flex-col gap-20">
-        <h1 class="text-[17dvw] leading-[14dvw] font-bold text-center w-full my-5">
-            ART & LIFE
-        </h1>
+        <img src="/assets/home/artLifeSec/artLife.svg" alt="image...">
         <div class="flex gap-5 p-2 max-md:overflow-scroll bg-black text-white text-center text-sm">
             <h4 class="font-semibold text-base">News Ticker+++</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit +++</p>

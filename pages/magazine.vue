@@ -1,3 +1,0 @@
-<template>
-    <Magazine />
-</template>

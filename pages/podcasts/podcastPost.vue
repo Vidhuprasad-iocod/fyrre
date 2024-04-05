@@ -1,0 +1,3 @@
+<template>
+    <podcast-posts />
+</template>

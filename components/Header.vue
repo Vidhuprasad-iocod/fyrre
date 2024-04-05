@@ -1,7 +1,10 @@
+
 <template>
     <header class="mx-20 mt-6">
         <div class=" flex flex-wrap justify-between items-center">
-            <h1 class="font-bold text-xl"><nuxt-link to="/">FYRRE MAGAZINE</nuxt-link></h1>
+            <NuxtLink to="/">
+                <img src="/assets/header/fyrreMagazine.svg" alt="image...">
+            </NuxtLink>
             <ul class="flex flex-wrap gap-5 items-center">
                 <li><nuxt-link to="/magazine">Magazine</nuxt-link></li>
                 <li><nuxt-link to="/authors">Authors</nuxt-link></li>

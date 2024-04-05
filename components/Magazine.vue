@@ -1,8 +1,6 @@
 <template>
     <div class="mx-20 my-10 flex flex-col gap-20">
-        <h1 class="text-[16.7dvw] leading-[14dvw] font-bold text-center w-full my-5 uppercase">
-            magazine
-        </h1>
+        <img src="/assets/magazine/Magazine.svg" alt="image...">
         <div class="flex justify-between items-center">
             <h6 class="uppercase font-semibold">Categories</h6>
             <div class="flex gap-2 text-xs">

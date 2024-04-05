@@ -3,13 +3,13 @@
         <div class="flex flex-wrap justify-between items-center border-t border-black pt-10">
             <h1 class="text-8xl font-semibold max-md:text-5xl">AUTHORS</h1>
             <a class="font-semibold flex gap-2 items-center" href="">ALL AUTHORS
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
 		            <path fill="black" d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z" />
 	            </svg>
             </a>
         </div>
-        <div class="grid grid-cols-2 max-md:grid-cols-1 my-20">
-            <div class="flex flex-wrap gap-10 items-center p-5  border border-black">
+        <div class="grid grid-cols-2 border border-gray-100 max-md:grid-cols-1 my-20">
+            <div class="flex flex-wrap gap-10 items-center p-5  border border-gray-500">
                 <img src="/assets/home/authorSec/jakob.svg" alt="image...">
                 <div class="flex flex-col gap-5">
                     <h3 class="text-3xl font-semibold">Jakob Grønberg</h3>
