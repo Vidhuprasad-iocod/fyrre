@@ -197,7 +197,9 @@ const data = [
                 <p class="text-sm">{{item.date }}</p>
                 <label class="text-xs uppercase border border-black rounded-3xl px-3 py-2" for="">{{item.type }}</label>
             </div>
-            <img :src="item.image" alt="image...">
+            <NuxtLink to="/magazine/magazinePost">
+                <img :src="item.image" alt="image...">
+            </NuxtLink>
             <div class="flex gap-20 flex-col justify-between">
             <div class="flex flex-col gap-2">
                 <h2 class="text-3xl font-semibold">{{item.title }}</h2>
