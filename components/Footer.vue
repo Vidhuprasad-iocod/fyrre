@@ -1,14 +1,42 @@
+<script setup>
+import gsap from 'gsap'
+
+const newsLatter = [
+    'Newsletter+++',
+    'Newsletter+++',
+    'Newsletter+++',
+    'Newsletter+++',
+    'Newsletter+++',
+    'Newsletter+++',
+    'Newsletter+++',
+    'Newsletter+++',
+    'Newsletter+++',
+    'Newsletter+++'
+]
+
+onMounted( () => {
+    gsap.fromTo('#newsLatter', 
+    {   x: '100%'},
+    {
+        x: '-100%',
+        duration: 20,
+        repeat: Infinity,
+        ease: 'linear'
+    }
+)
+})
+
+</script>
+
+
 <template>
     <footer class="bg-black text-white box-border">
         <ul class="flex justify-between text-lg font-semibold p-5 overflow-hidden">
-            <li>NEWSLETTER+++</li>
-            <li>NEWSLETTER+++</li>
-            <li>NEWSLETTER+++</li>
-            <li>NEWSLETTER+++</li>
-            <li>NEWSLETTER+++</li>
-            <li>NEWSLETTER+++</li>
-            <li>NEWSLETTER+++</li>
-            <li>NEWSLETTER+++</li>
+            <li id="newsLatter" class="marquee flex">
+                <template v-for="(news, index) in newsLatter" :key="index">
+                    {{ news }}&nbsp;&nbsp;&nbsp;
+                </template>
+            </li>
         </ul>
         <div class="flex gap-20 flex-col px-20 pb-6 mt-20">
             <div class="flex flex-wrap justify-between my-10 items-center max-md:gap-5">

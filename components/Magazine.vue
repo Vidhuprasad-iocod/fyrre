@@ -1,6 +1,21 @@
+<script setup>
+import gsap from 'gsap'
+
+onMounted( () => {
+    gsap.to('#titleName', {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power2.out'
+    })
+})
+
+</script>
+
+
 <template>
     <div class="mx-20 my-10 flex flex-col gap-20">
-        <img src="/assets/magazine/Magazine.svg" alt="image...">
+        <img id="titleName" class="relative opacity-0 translate-y-40" src="/assets/magazine/Magazine.svg" alt="image...">
         <div class="flex justify-between items-center">
             <h6 class="uppercase font-semibold">Categories</h6>
             <div class="flex gap-2 text-xs">

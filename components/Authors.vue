@@ -1,28 +1,40 @@
 <script setup>
+import gsap from 'gsap'
+
+onMounted(() => {
+    gsap.to('#titleName', {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power2.out'
+    })
+})
+
+
 
 const authors = [
     {
-        image: '/assets/home/authorSec/jakob.svg',
+        image: '/assets/authors/jakob-grønberg.webp',
         name: 'Jakob Grønberg'
     },
     {
-        image: '/assets/home/authorSec/louise.svg',
+        image: '/assets/authors/louise-jensen.webp',
         name: 'Louise Jensen'
     },
     {
-        image: '/assets/home/authorSec/anne.svg',
+        image: '/assets/authors/anne-henry.webp',
         name: 'Anne Henry'
     },
     {
-        image: '/assets/home/authorSec/anna.svg',
+        image: '/assets/authors/anna-nielsen.webp',
         name: 'Anna Nielsen'
     },
     {
-        image: '/assets/home/authorSec/jane.svg',
+        image: '/assets/authors/jane-cooper.webp',
         name: 'Jane Cooper'
     },
     {
-        image: '/assets/home/authorSec/cristofer.svg',
+        image: '/assets/authors/cristofer-vaccaro.webp',
         name: 'Cristofer Vaccaro'
     }
 ]
@@ -36,12 +48,12 @@ const authors = [
 <template>
     <div class="mx-20 my-10">
         <div class="pb-10">
-            <img src="/assets/authors/Authors.svg" alt="image...">
+            <img id="titleName" class="relative translate-y-40 opacity-0" src="/assets/authors/Authors.svg" alt="image...">
         </div>
         <div class="my-20">
             <div v-for="(item, index) in authors" :key="index" :class="{'border-b border-black': index !== authors.length-1}" class="flex justify-between  pb-10 mb-10">
                 <div class="flex flex-wrap gap-10 items-center">
-                    <img :src="item.image" alt="image...">
+                    <img class="w-[150px] h-[150px] rounded-full duration-300 hover:scale-105" :src="item.image" alt="image...">
                     <h3 class="text-3xl font-semibold">{{ item.name }}</h3>
                 </div>
                 <div class="flex gap-20 justify-start items-center text-sm">

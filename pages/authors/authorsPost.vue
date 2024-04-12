@@ -1,3 +1,3 @@
 <template>
-    <authors-post />
+    <authors-posts />
 </template>

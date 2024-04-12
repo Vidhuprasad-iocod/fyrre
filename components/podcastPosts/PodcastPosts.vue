@@ -3,6 +3,32 @@
 defineComponent({
     name: ['RiArrowLeftLine', 'RiSpotifyFill', 'RiAppleFill', 'RiSoundcloudLine']
 });
+
+const latestEpisodes = [
+    {
+        id: 1,
+        title: 'The Problem of today’s cultural development',
+        image: '/assets/podcast/problem-of-todays-culture.webp',
+        date: '16.06.2022',
+        duration: '1h 20 Min'
+    },
+    {
+        id: 2,
+        title: 'The hidden messages of Jack Nielson',
+        image: '/assets/podcast/jack-nielson.webp',
+        date: '16.06.2022',
+        duration: '60 Min'
+    },
+    {
+        id: 3,
+        title: 'Behind the scenes of the street art culture',
+        image: '/assets/podcast/street-art.webp',
+        date: '16.06.2022',
+        duration: '45 Min'
+    }
+]
+
+
 </script>
 
 
@@ -21,7 +47,7 @@ defineComponent({
         </div>
         <div class="py-10 mb-20 mx-32 grid grid-cols-9 gap-24">
             <div class="flex flex-col gap-10 col-span-3">
-                <img src="/assets/podcast/podcast-post/podcast-cover.svg" alt="image...">
+                <img src="/assets/podcast/problem-of-todays-culture.webp" alt="image...">
                 <div class="flex items-center justify-between gap-5">
                     <h6 class="text-xl font-semibold">Listen On</h6>
                     <ul class="flex gap-4 items-center">
@@ -159,44 +185,16 @@ defineComponent({
                 </NuxtLink>
             </div>
             <div class="flex flex-wrap mt-20">
-                <div class="flex flex-col gap-4 p-8 border border-black flex-1">
-                    <img src="/assets/home/podcastSec/podcast-cover05.svg" alt="image...">
+                <div v-for="(item , index) in latestEpisodes" :key="index" class="flex flex-col gap-4 p-8 border border-black flex-1">
+                    <img :src="item.image" alt="image...">
                     <div class="flex flex-col gap-10">
-                        <h3 class="text-3xl font-semibold">The Problem of today’s cultural development</h3>
+                        <h3 class="text-3xl font-semibold">{{ item.title }}</h3>
                         <div class="flex gap-8 justify-start items-center text-sm">
                             <div>
-                                <span class="font-semibold pr-2">Date</span><span>16.06.2022</span>
+                                <span class="font-semibold pr-2">Date</span><span>{{ item.date }}</span>
                             </div>
                             <div>
-                                <span class="font-semibold pr-2">Duration</span><span>1h 20 Min</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4 p-8 border border-black flex-1">
-                    <img src="/assets/home/podcastSec/podcast-cover04.svg" alt="image...">
-                    <div class="flex flex-col gap-10">
-                        <h3 class="text-3xl font-semibold">The hidden messages of Jack Nielson</h3>
-                        <div class="flex gap-8 justify-start items-center text-sm">
-                            <div>
-                                <span class="font-semibold pr-2">Date</span><span>16.06.2022</span>
-                            </div>
-                            <div>
-                                <span class="font-semibold pr-2">Duration</span><span>60 Min</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4 p-8 border border-black flex-1">
-                    <img src="/assets/home/podcastSec/podcast-cover03.svg" alt="image...">
-                    <div class="flex flex-col gap-10">
-                        <h3 class="text-3xl font-semibold">Behind the scenes of the street art culture</h3>
-                        <div class="flex gap-8 justify-start items-center text-sm">
-                            <div>
-                                <span class="font-semibold pr-2">Date</span><span>16.06.2022</span>
-                            </div>
-                            <div>
-                                <span class="font-semibold pr-2">Duration</span><span>45 Min</span>
+                                <span class="font-semibold pr-2">Duration</span><span>{{ item.duration }}</span>
                             </div>
                         </div>
                     </div>

@@ -9,7 +9,7 @@
 
 <script setup>
 useHead({
-    titleTemplate : '%s - Fyrre',
+    titleTemplate : 'Fyrre',
 })
 
 </script>
